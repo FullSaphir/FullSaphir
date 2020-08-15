@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interpool</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style(Accueil2.0).css" />
+<link rel="icon" href="53.png"/>
+
+
+<div class="topnav">
+  <a href="../PC.html" id="Official">
+  <img src="Logo.png" width="100" height="70" style="float:left"/>
+  
+  <a class="active" href="Accueil.html">Accueil</a>
+  <a href="../Personnes recherchées/Personnes recherchées.html">Suspects</a>
+</div>
+    
+    <body>
+		
+		<h1 class="carac"><center>Interpool	</center></h1>
+
+	<div class="Diaporama" style="width:500px">
+		<img class="mySlides" src="diapo1.png" style="width:100%">
+		<img class="mySlides" src="diapo2.png" style="width:100%">
+		<img class="mySlides" src="diapo3.png" style="width:100%">
+	</div>
+	
+
+<div class="info">
+
+
+	Interpool est une organisation internationale de police criminelle. Elle posséde une </br>
+		base de donné policieres contenant des informations sur les infractions ainsi que des </br>
+		criminels (noms, empreintes digitales, passeports volé, ect). Leur but est d'apporté un </br>
+		appui a des enquêtes, d'analyse et d'aide à la localisation de fugitifs.
+
+</div>
+
+	<center><p2>Série de meurtres</p2></center>
+	<p3>Une série de meurtre a eu lieu dans le pays. Il y a eu 53 morts répertoriés et les enquêteurs peinent toujours à trouver un coupable.</br></br>
+	Les motifs n'ont pas été trouvés. Les meurtres peuvent être extrêmement différent d'une fois à l'autre mais plusieurs indices indiquent que la même personne est derrière tout ça.
+	</p3>
+	
+	</p4>
+	<center><p5>Suspects</p5></center>
+	<p6>Après de longues enquêtes sur chacun des crimes, les enquêteurs ont réussis à isoler plusieurs suspects.</br></br>
+	Cependant, ces suspects sont soit morts soit introuvables. De plus le manque d'indices et de preuves les ont forcé à boucler l'affaire sans trouver de coupable.</br></br>
+	Le véritable coupable derrière cette série de meurtre reste donc un mystère. Il semblerait que la Vérité soit plus complexe qu'elle n'y parait...
+	</p6>
+<section>
+
+		
+</div>
+
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2500); // Change l'image toutes les 2 secondes
+		}
+		</script>
+	</body>
+	<audio loop src="../../Sound/PC.wav" autoplay></audio>
+</html>

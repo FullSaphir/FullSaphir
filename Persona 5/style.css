@@ -1,0 +1,51 @@
+h3
+{
+	color: white;
+	text-align:;
+	width:-20
+}
+a
+{
+	color: white;
+	font-size:xx-large;
+}
+body
+{
+	font-family: ComicSansMS, Arial, Verdana;
+	font-size: large;
+	background-image:url("videogames3.png");
+	color: white;
+	
+	
+}
+header
+{
+	text-align:right;
+	font-size:large;
+	margin:15px;
+	right:20%
+	
+}
+section
+{
+	display : block;
+	text-align:center;
+	margin : 20px;
+	padding : 20px;
+	height : 400px;
+	color: white
+}
+#lien1
+{
+	margin-left: 5%;
+}
+#lien2
+{
+	margin-left: 5%;
+}
+footer
+{
+	text-align:center;
+	
+}
+

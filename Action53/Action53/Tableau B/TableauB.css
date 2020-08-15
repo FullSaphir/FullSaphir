@@ -1,0 +1,25 @@
+body, html {
+	height: 100%;
+	margin: 0;
+
+
+
+	  /* The image used */
+	  background-image: url("tableau bloodobrn.jpg"); fixed;
+	  -webkit-filter: brightness(0.8);
+	  filter: brightness(1.5);
+
+	  /* Full height */
+	  height: 100%; 
+
+	  /* Center and scale the image nicely */
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  
+	}
+	retour{
+		}
+	
+
+

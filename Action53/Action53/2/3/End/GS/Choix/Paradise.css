@@ -1,0 +1,25 @@
+
+body, html {
+	height: 100%;
+	margin: 0;
+	background-image: url("End Paradise.png");
+}
+
+	.grenier {
+	  /* The image used */
+	  background-image: url("End.png"); fixed;
+
+	  /* Full height */
+	  height: 100%; 
+
+	  /* Center and scale the image nicely */
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  
+	}
+
+
+
+
+

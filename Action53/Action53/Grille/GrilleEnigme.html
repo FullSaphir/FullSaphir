@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="GrilleEnigme.css" />
+        <title>Action53</title>
+		
+	<div class="grenier">
+		<a href="../Face2.html" id="face2">
+		<img   src="../retour.png" width="50" height="60" style="float:left;margin:0px 0px 0 0px;"  />
+
+    </head>
+<body>
+<bgsound src="rire.mp3">
+<script language="javascript"><!--
+
+var num="0"; 
+var code=new Array(num,num,num,num,num,num,num,num); /*Création liste*/
+var pos=0; /*Nombre de valeurs dans la liste*/
+
+
+for (var f = 0; f < 8; f++) {
+  code[f]="v";
+}
+
+function nouveau(num) {
+var SonBouton = new Audio('SonBouton.mp3');
+SonBouton.play();
+  if (pos<8) {
+    for (var f = 1; f < 8; f++) {
+      code[f-1]=code[f];
+    }
+    code[7]=eval(num);
+    pos+=1;
+  }
+  affiche();
+}
+
+
+
+function ok() {
+  password="";
+  for (var f = 0; f < 8; f++) {
+    if (code[f]!="v") {password+=code[f]};
+  }
+	if (password != "15033"){
+	
+	password="GrilleEnigme"}
+
+  var locate;
+	locate = password + ".html";
+	this.location.href = locate;
+}
+
+
+function cancel() {
+var SonBouton = new Audio('SonBouton.mp3');
+SonBouton.play();
+  for (var f = 0; f < 8; f++) {
+    code[f]="v";
+  }
+  pos = 0;
+  affiche();
+}
+	
+//--></script>
+
+
+
+
+<table  cellspacing="0" width="650" height="550" style="float:left;margin:100px 0px 0 60px;" >
+    <tr>
+        <td align="center"><p align="center"><a href="#" onclick="nouveau('1')" onclick="nouveau('1')">
+		<img src="0.png"  width="200" height="200"></a> </p> </td>
+		
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('2')">
+		<img src="0.png"border="0" width="200" height="200"></a> </p></td>
+		
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('3')">
+		<img src="0.png"border="0" width="200" height="200"></a> </p></td>
+		
+    </tr>
+    <tr>
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('4')">
+		<img src="0.png"border="0" width="200" height="200"></a> </p></td>
+        
+		<td align="center"><p align="center"><a href="#"onclick="nouveau('5')">
+		<img src="0.png"border="0" width="200" height="200"></a> </p></td>
+        
+		<td align="center"><p align="center"><a href="#"onclick="nouveau('6')">
+		<img src="0.png"border="0" width="200" height="200"></a> </p>
+        </td>
+    </tr>
+	
+    <tr>
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('7')">
+		<img src="0.png"border="0" width="200" height="200"></a></p></td>
+		
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('8')">
+		<img src="0.png"border="0" width="200" height="200"></a> </p></td>
+		
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('9')">
+		<img src="0.png"border="0" width="200" height="200"></a> </p></td>
+    </tr>
+	
+    <tr>
+        <td align="center"><p align="center"><a href="#"onclick="cancel()">
+		<img src="no.png" border="0"width="200" height="200"></a> </p></td>
+		
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('0')">
+		<img src="0.png"border="0" width="200" height="200"></a> </p></td>
+		
+        <td align="center"><p align="center">
+		<a href="javascript:ok()"><img src="yes.png" border="0" width="200" height="200"> </a> </p>
+        </td>
+    </tr>
+	
+
+
+</table>
+</center></div><div align="right"><center>
+
+    </tr>
+
+</center></div>
+
+<audio  src="ahaha.mp3" autoplay></audio>
+<audio src="../Sound/Step2.wav" autoplay></audio>
+<audio loop src="../Sound/water.wav" autoplay></audio>	
+</body>		
+</html>

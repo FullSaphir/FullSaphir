@@ -1,0 +1,246 @@
+
+/* Eléments principaux de la page */
+
+body
+{
+    background: url('../blac.png');
+
+    color: #FFFFFF;
+}
+
+#bloc_page
+{
+    width: 1500px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+	margin-left: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h2 { 
+	margin-left: 50px;
+	font-size: 3em;
+    font-weight: normal;
+    margin: auto;
+}
+/* Header */
+
+header
+{
+    background: url('../green.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+
+#logo img
+{
+    width: 60px;
+    height: 60px;
+}
+
+header h1
+{
+
+    font-size: 3em;
+    font-weight: normal;
+    margin: auto;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #FFFFFF;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #AF0000;
+    border-bottom: 3px solid #AF0000;
+}
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 500px;
+    border-radius: 5px;
+    background: url('../blender.png') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+    
+}
+
+
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 25px;
+	margin-top: 75px;
+	font-size: 20px;
+}
+
+article
+{
+    flex: 4;
+	 margin-top: 100px;
+
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+	
+Musiques
+{
+    margin: 0;
+
+}
+aside
+{
+    flex: 0.7;
+    position: relative;
+    background-color: #AF0000;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+
+#Image B.Battler
+{
+    text-align: center;
+}
+
+
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('../images/ico_top.png') no-repeat top center, url('../images/separateur.png') repeat-x top, url('../images/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
+#tweet
+{
+    width: 28%;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+#mes_amis
+{
+    width: 31%;
+	margin-left: 20px;
+}
+
+#mes_photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#listes_amis
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+	margin-right: 5px;
+}
+
+#mes_amis ul
+{
+    list-style-image: url('../images/ico_liensexterne.png');
+    padding-left: 5px;
+	    margin-right: 2px;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+	    margin-right: 2px;
+}
+#mes_sources a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+

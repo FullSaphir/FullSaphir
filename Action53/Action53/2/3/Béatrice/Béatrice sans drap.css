@@ -1,0 +1,21 @@
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+	.grenier {
+	  /* The image used */
+	  background-image: url("Béatrice sans drap.png"); fixed;
+	  -webkit-filter: brightness(1.3);
+
+
+	  /* Full height */
+	  height: 100%; 
+
+	  /* Center and scale the image nicely */
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  
+	}
+

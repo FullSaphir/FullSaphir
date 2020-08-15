@@ -1,0 +1,6 @@
+-Le jeu peut rencontrer des problemes en fonction de la dimension de l'ecrans 
+(le risque de l'HTML)
+-Le jeu doit etre lance sur FireFox pour fonctionner correctement 
+-Le lanceur est le "Action53"
+
+https://mega.nz/#F!71onxDza!5DQn686lCuqpGM4Zr-6hKg

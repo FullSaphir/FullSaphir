@@ -1,0 +1,164 @@
+<head>
+<meta charset="utf-8" />
+        <link rel="stylesheet" href="coffre.css" />
+        <title>Action53</title>
+</head>
+
+<div  style="float:right;margin:390 200px 0 0px;"><center>
+
+<table border="4" cellspacing="0" width="650"  bgcolor="black" bordercolor="#505050" bordercolordark="#000000" bordercolorlight="#000000">
+    <tr>
+        <td align="center"><p align="center"><img
+        src="c0.gif" width="37" height="42" name="a"><img
+        src="c1.gif" width="37" height="42" name="b"><img
+        src="c2.gif" width="37" height="42" name="c"><img
+        src="c3.gif" width="37" height="42" name="d"><img
+        src="c4.gif" width="37" height="42" name="e"><img
+        src="c5.gif" width="37" height="42" name="f"><img
+        src="c6.gif" width="37" height="42" name="g"><img
+        src="cv.gif" width="37" height="42" name="h"> </p>
+        </td>
+    </tr>
+</table>
+
+<script language="javascript"><!--
+
+var num="0";   /*On initialise la variable "num"=0*/
+var code=new Array(num,num,num,num,num,num,num,num);  /*On crée une liste pour mettre les chiffres*/
+var pos=0; /*Position du chiffre qu'on met*/
+
+for (var f = 0; f < 8; f++) {  /* Créer une boucle, on crée la variable f, tant que c'est inférieur à 8,  il renvoie la valeur avant l'incrémentation. (+1) */
+  code[f]="v";   /* */
+}
+
+c1=new Image(); c1.src="c1.gif" /* On charge les images*/
+c2=new Image(); c2.src="c2.gif" /* On charge les images*/
+c3=new Image(); c3.src="c3.gif" /* On charge les images*/
+c4=new Image(); c4.src="c4.gif" /* On charge les images*/
+c5=new Image(); c5.src="c5.gif" /* On charge les images*/
+c6=new Image(); c6.src="c6.gif" /* On charge les images*/
+c7=new Image(); c7.src="c7.gif" /* On charge les images*/
+c8=new Image(); c8.src="c8.gif" /* On charge les images*/
+c9=new Image(); c9.src="c9.gif" /* On charge les images*/ 
+c0=new Image(); c0.src="c0.gif" /* On charge les images*/ 
+cv=new Image(); cv.src="cv.gif" /* On charge les images*/
+
+function affiche(){ /*Permet d'afficher*/ 
+  document.images.a.src=eval("c"+code[0]+".src"); /*Permet d'afficher l'image c+nombre*/
+  document.images.b.src=eval("c"+code[1]+".src"); /*Permet d'afficher l'image c+nombre*/
+  document.images.c.src=eval("c"+code[2]+".src"); /*Permet d'afficher l'image c+nombre*/
+  document.images.d.src=eval("c"+code[3]+".src"); /*Permet d'afficher l'image c+nombre*/
+  document.images.e.src=eval("c"+code[4]+".src"); /*Permet d'afficher l'image c+nombre*/
+  document.images.f.src=eval("c"+code[5]+".src"); /*Permet d'afficher l'image c+nombre*/
+  document.images.g.src=eval("c"+code[6]+".src"); /*Permet d'afficher l'image c+nombre*/
+  document.images.h.src=eval("c"+code[7]+".src"); /*Permet d'afficher l'image c+nombre*/
+}
+function nouveau(num) {  /*Fonction pour créer un nouveau chiffre en cliquant */
+var SonBouton = new Audio('SonBouton.mp3');  /*On initialise la variable pour le son */
+SonBouton.play(); /*Le son se joue lorsque la fonction est lancée, donc quand on clique, le son se lance*/
+  if (pos<8) { /* Si il y a moins de 8 chiffres affichés, Boucle*/
+    for (var f = 1; f < 8; f++) { /*Boucle similaier à la précédente*/
+      code[f-1]=code[f]; /*Permet de décaler la valeur quand on clique sur une nouvelle valeur */
+    }
+    code[7]=eval(num); /*On évalue la liste de nombres rentrés précédemment*/
+    pos+=1; /*Permet de faire avancer le numéro*/
+  }
+  affiche();/*Permet d'afficher le numéro*/
+}
+function ok() { /*Pour quand c'est bon*/
+var SonBouton = new Audio('SonBouton.mp3'); /*Permet d'initialiser le son */
+SonBouton.play(); /*OLance le son*/
+  password=""; /*Création variable "password" */
+  for (var f = 0; f < 8; f++) { /*Fonction similaire à la précédente  */
+    if (code[f]!="v") {password+=code[f]}; /*Condition si le code est différent de v*/
+  }
+	if (password != "14006953"){ /*Si la page n'existe pas, si ce code n'est pas 14006953 */
+	password="coffre"} /*Alors le code est "coffre", ce qui refresh la page*/
+  var locate; /*variable du nom de locate */
+  locate = password + ".html"; /*si le mot de passe est bon, elle va passer à la page suivante */
+  this.location.href = locate; /*Cherche la page*/
+}
+function cancel() { /* Fonction du bouton supprimé*/
+var SonBouton = new Audio('SonBouton.mp3'); /**/
+SonBouton.play();
+  for (var f = 0; f < 8; f++) {
+    code[f]="v";
+  }
+  pos = 0; /* Revient à la position 0 donc efface les nombres marqués */
+  affiche();
+}
+//--></script>
+
+
+
+
+<table border="10" cellspacing="0" width="650" height="550" bgcolor="#505050" bordercolor="#505050" bordercolordark="#000000"bordercolorlight="#505050" cols="3" rows="4">
+    <tr>
+        <td align="center"><p align="center"><a href="#" onclick="nouveau('1')">
+		<img src="bouton 1 gris.png"  width="100" height="100"></a> </p> </td>
+		
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('2')">
+		<img src="bouton 2 gris.png"border="0" width="100" height="100"></a> </p></td>
+		
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('8')">
+		<img src="bouton 3 gris.png"border="0" width="100" height="100"></a> </p></td>
+		
+    </tr>
+    <tr>
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('4')">
+		<img src="bouton 4 gris.png"border="0" width="100" height="100"></a> </p></td>
+        
+		<td align="center"><p align="center"><a href="#"onclick="nouveau('5')">
+		<img src="bouton 5 gris.png"border="0" width="100" height="100"></a> </p></td>
+        
+		<td align="center"><p align="center"><a href="#"onclick="nouveau('6')">
+		<img src="bouton 6 gris.png"border="0" width="100" height="100"></a> </p>
+        </td>
+    </tr>
+	
+    <tr>
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('7')">
+		<img src="bouton 7 gris.png"border="0" width="100" height="100"></a></p></td>
+		
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('3')">
+		<img src="bouton 8 gris.png"border="0" width="100" height="100"></a> </p></td>
+		
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('9')">
+		<img src="bouton 9 gris.png"border="0" width="100" height="100"></a> </p></td>
+    </tr>
+	
+    <tr>
+        <td align="center"><p align="center"><a href="#"onclick="cancel()">
+		<img src="bouton effacer gris.png" border="0"width="100" height="100"></a> </p></td>
+		
+        <td align="center"><p align="center"><a href="#"onclick="nouveau('0')">
+		<img src="bouton 0 gris.png"border="0" width="100" height="100"></a> </p></td>
+		
+        <td align="center"><p align="center">
+		<a href="javascript:ok()"><img src="bouton valider gris.png"border="0" width="100" height="100"></a> </p>
+        </td>
+    </tr>
+
+</table>
+</center></div><div align="right"><center>
+
+    </tr>
+
+</center></div><script language="javascript"><!--- hide script from old browsers
+affiche();
+// end hiding ---></script>
+	
+
+<a href="../Face8.html" id="face2">
+<img   src="../retour.png" width="50" height="60"  />
+
+<div class="fleche">
+<a href="Coffre_Side.html" id="Gauche">
+<img src="../fleche2.png" width="50" height="50" alt="" title="" style="float:left; margin:965px 2px 0 2px;" />
+
+<audio src="../Sound/Step4.wav" autoplay></audio>
+<audio loop src="../Sound/water.wav" autoplay></audio>
+</div>
+<embed src="ahaha.wav"   autostart="true" hidden="true" />
+</body>		
+</html>
