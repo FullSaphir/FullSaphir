@@ -4,14 +4,35 @@
 body
 {
     background: url('../blac.png');
-
+	font-family: "Ma Super Fonte", Helvetica, Arial, sans-serif;
     color: #FFFFFF;
+}
+@font-face {
+	font-family: "Ma Super Fonte";
+	src: url('Blambot Casual Regular.ttf');
+}
+@font-face {
+	font-family: "Ma Super Fonte";
+	font-style: italic;
+	src: url('Blambot Casual Regular.ttf');
+}
+@font-face {
+	font-family: "Ma Super Fonte";
+	font-weight: bold;
+	src: url('Blambot Casual Regular.ttf');
 }
 
 #bloc_page
 {
     width: 1500px;
     margin: auto;
+}
+
+Titre
+{
+    width: 1500px;
+    margin: auto;
+	font-size: 3em;
 }
 
 section h1, footer h1, nav a
@@ -22,11 +43,12 @@ section h1, footer h1, nav a
 }
 
 h2 { 
-	margin-left: 50px;
+	margin-left: 25px;
 	font-size: 3em;
     font-weight: normal;
     margin: auto;
 }
+
 /* Header */
 
 header
@@ -133,7 +155,7 @@ section
 
 article
 {
-    flex: 4;
+    flex: 3;
 	 margin-top: 100px;
 
 }
