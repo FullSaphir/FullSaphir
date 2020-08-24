@@ -1,10 +1,23 @@
-
+@font-face {
+	font-family: "Ma Super Fonte";
+	src: url('Blambot Casual Regular.ttf');
+}
+@font-face {
+	font-family: "Ma Super Fonte";
+	font-style: italic;
+	src: url('Blambot Casual Regular.ttf');
+}
+@font-face {
+	font-family: "Ma Super Fonte";
+	font-weight: bold;
+	src: url('Blambot Casual Regular.ttf');
+}
 /* Eléments principaux de la page */
 
 body
 {
     background: url('../blac.png');
-
+	font-family: "Ma Super Fonte", Helvetica, Arial, sans-serif;
     color: #FFFFFF;
 }
 
