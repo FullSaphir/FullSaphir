@@ -1,3 +1,12 @@
+
+/* Eléments principaux de la page */
+
+body
+{
+    background: url('../blac.png');
+	font-family: "Ma Super Fonte", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+}
 @font-face {
 	font-family: "Ma Super Fonte";
 	src: url('Blambot Casual Regular.ttf');
@@ -12,19 +21,18 @@
 	font-weight: bold;
 	src: url('Blambot Casual Regular.ttf');
 }
-/* Eléments principaux de la page */
-
-body
-{
-    background: url('blac.png');
-	font-family: "Ma Super Fonte", Helvetica, Arial, sans-serif;
-    color: #FFFFFF;
-}
 
 #bloc_page
 {
     width: 1500px;
     margin: auto;
+}
+
+Titre
+{
+    width: 1500px;
+    margin: auto;
+	font-size: 3em;
 }
 
 section h1, footer h1, nav a
@@ -35,16 +43,17 @@ section h1, footer h1, nav a
 }
 
 h2 { 
-	margin-left: 50px;
+	margin-left: 25px;
 	font-size: 3em;
     font-weight: normal;
     margin: auto;
 }
+
 /* Header */
 
 header
 {
-    background: url('green.png') repeat-x bottom;
+    background: url('../green.png') repeat-x bottom;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -112,7 +121,7 @@ nav a:hover
     margin-top: 15px;
     height: 500px;
     border-radius: 5px;
-    background: url('blender.png') no-repeat;
+    background: url('../blender.png') no-repeat;
     position: relative;
     box-shadow: 0px 4px 4px #1c1a19;
     margin-bottom: 25px;
@@ -146,7 +155,8 @@ section
 
 article
 {
-    flex: 4;
+    flex: 3;
+	 margin-top: 100px;
 
 }
 
@@ -186,7 +196,7 @@ aside
 footer
 {
     display: flex;
-    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    background:  url('../images/ico_top.png') no-repeat top center, url('../images/separateur.png') repeat-x top, url('../images/ombre.png') repeat-x top;
     padding-top: 25px;
 }
 
@@ -233,7 +243,7 @@ footer h1
 
 #mes_amis ul
 {
-    list-style-image: url('images/ico_liensexterne.png');
+    list-style-image: url('../images/ico_liensexterne.png');
     padding-left: 5px;
 	    margin-right: 2px;
 }

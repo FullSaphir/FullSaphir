@@ -1,3 +1,12 @@
+
+/* Eléments principaux de la page */
+
+body
+{
+    background: url('../blac.png');
+	font-family: "Ma Super Fonte", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+}
 @font-face {
 	font-family: "Ma Super Fonte";
 	src: url('Blambot Casual Regular.ttf');
@@ -12,19 +21,18 @@
 	font-weight: bold;
 	src: url('Blambot Casual Regular.ttf');
 }
-/* Eléments principaux de la page */
-
-body
-{
-    background: url('blac.png');
-	font-family: "Ma Super Fonte", Helvetica, Arial, sans-serif;
-    color: #FFFFFF;
-}
 
 #bloc_page
 {
     width: 1500px;
     margin: auto;
+}
+
+Titre
+{
+    width: 1500px;
+    margin: auto;
+	font-size: 3em;
 }
 
 section h1, footer h1, nav a
@@ -35,16 +43,17 @@ section h1, footer h1, nav a
 }
 
 h2 { 
-	margin-left: 50px;
+	margin-left: 25px;
 	font-size: 3em;
     font-weight: normal;
     margin: auto;
 }
+
 /* Header */
 
 header
 {
-    background: url('green.png') repeat-x bottom;
+    background: url('../green.png') repeat-x bottom;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -112,7 +121,7 @@ nav a:hover
     margin-top: 15px;
     height: 500px;
     border-radius: 5px;
-    background: url('blender.png') no-repeat;
+    background: url('../blender.png') no-repeat;
     position: relative;
     box-shadow: 0px 4px 4px #1c1a19;
     margin-bottom: 25px;
@@ -144,11 +153,7 @@ section
 	font-size: 20px;
 }
 
-article
-{
-    flex: 4;
 
-}
 
 .ico_categorie
 {
@@ -156,11 +161,7 @@ article
     margin-right: 10px;
 }
 	
-Musiques
-{
-    margin: 0;
 
-}
 aside
 {
     flex: 0.7;
@@ -173,20 +174,12 @@ aside
     font-size: 0.9em;
 }
 
-
-#Image B.Battler
-{
-    text-align: center;
-}
-
-
-
 /* Footer */
 
 footer
 {
     display: flex;
-    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    background:  url('../images/ico_top.png') no-repeat top center, url('../images/separateur.png') repeat-x top, url('../images/ombre.png') repeat-x top;
     padding-top: 25px;
 }
 
@@ -200,55 +193,6 @@ footer h1
     font-size: 1.1em;
 }
 
-
-#tweet
-{
-    width: 28%;
-}
-
-#mes_photos
-{
-    width: 35%;
-}
-
-#mes_amis
-{
-    width: 31%;
-	margin-left: 20px;
-}
-
-#mes_photos img
-{
-    border: 1px solid #181818;
-    margin-right: 2px;
-}
-
-#listes_amis
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0;
-	margin-right: 5px;
-}
-
-#mes_amis ul
-{
-    list-style-image: url('images/ico_liensexterne.png');
-    padding-left: 5px;
-	    margin-right: 2px;
-}
-
-#mes_amis a
-{
-    text-decoration: none;
-    color: #FFFFFF;
-	    margin-right: 2px;
-}
-#mes_sources a
-{
-    text-decoration: none;
-    color: #FFFFFF;
-}
 
 
 
