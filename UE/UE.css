@@ -4,7 +4,7 @@
 body
 {
     background: url('../blac.png');
-
+	font-family: "Ma Super Fonte", Helvetica, Arial, sans-serif;
     color: #FFFFFF;
 }
 
@@ -66,6 +66,22 @@ header h1
 }
 
 /* Navigation */
+
+@font-face {
+	font-family: "Ma Super Fonte";
+	src: url('Blambot Casual Regular.ttf');
+}
+@font-face {
+	font-family: "Ma Super Fonte";
+	font-style: italic;
+	src: url('Blambot Casual Regular.ttf');
+}
+@font-face {
+	font-family: "Ma Super Fonte";
+	font-weight: bold;
+	src: url('Blambot Casual Regular.ttf');
+}
+
 
 nav ul
 {
@@ -135,6 +151,7 @@ article
 {
     flex: 4;
 	margin-top: 100px;
+	font-family: "Ma Super Fonte", Helvetica, Arial, sans-serif;
 
 
 }
